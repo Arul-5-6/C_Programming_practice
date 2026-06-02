@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int n,d0,d1,d2,d3;
+    scanf("%d",&n);
+
+    d0=n%10;
+    d1=(n/10)%10;
+    d2=(n/100)%10;
+    d3=n/1000;
+
+    printf("%d",(d0==d1)&((d2<d3)+(d2>d3)));
+    return 0;
+}
